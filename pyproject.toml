@@ -1,10 +1,23 @@
 [project]
 name = "buckets-for-zerodha"
 version = "0.1.0"
-description = "Add your description here"
+description = "A command-line personal finance tracker that connects to your Zerodha account, maps your mutual funds to risk categories, allocates them across your financial goals, and tells you exactly how much SIP to set up, per risk bucket, per goal, to hit your targets on time."
+authors = [
+    {name = "Rohan Panchal", email = "rohanpanchal76@gmail.com"}
+]
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
     "kiteconnect>=5.0.1",
     "python-dotenv>=1.2.1",
 ]
+
+[build-system]
+requires = ["uv-build"]
+build-backend = "uv_build"
+
+[project.scripts]
+buckets-for-zerodha = "buckets_for_zerodha.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
