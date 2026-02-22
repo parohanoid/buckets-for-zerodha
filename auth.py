@@ -1,7 +1,8 @@
-from kiteconnect import KiteConnect
-from dotenv import load_dotenv
-import webbrowser
 import os
+import webbrowser
+from dotenv import load_dotenv
+from kiteconnect import KiteConnect
+
 
 def get_kite_client() -> KiteConnect:
     load_dotenv()
