@@ -12,12 +12,12 @@ dependencies = [
     "python-dotenv>=1.2.1",
 ]
 
-[build-system]
-requires = ["uv-build"]
-build-backend = "uv_build"
+# [build-system]
+# requires = ["uv-build"]
+# build-backend = "uv_build"
 
-[project.scripts]
-buckets-for-zerodha = "buckets_for_zerodha.main:main"
+# [project.scripts]
+# buckets-for-zerodha = "buckets_for_zerodha.main:main"
 
-[tool.setuptools.packages.find]
-where = ["src"]
+# [tool.setuptools.packages.find]
+# where = ["src"]
